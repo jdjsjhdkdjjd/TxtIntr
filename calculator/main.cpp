@@ -6,7 +6,7 @@
 
 using namespace std;
 
-// Функция вывода справки
+// Функция вывода справки.
 void print_usage() {
     cout << "Usage: calculator -o <operation> [operands]\n";
     cout << "Operations (Variant 13 - Logarithmic):\n";
