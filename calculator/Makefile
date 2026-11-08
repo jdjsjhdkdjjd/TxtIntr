@@ -1,11 +1,11 @@
-CC=gcc
-CFLAGS=-Wall -Wextra -std=c11 -lm
+CXX=g++
+CXXFLAGS=-Wall -Wextra -std=c++11
 TARGET=calculator
 
 all: $(TARGET)
 
-$(TARGET): main.c
-	$(CC) $(CFLAGS) -o $(TARGET) main.c
+$(TARGET): main.cpp
+	$(CXX) $(CXXFLAGS) -o $(TARGET) main.cpp -lm
 
 clean:
 	rm -f $(TARGET)
