@@ -34,7 +34,7 @@ int main(int argc, char *argv[]) {
                 return 1;
             }
         } else {
-            // Это операнд (число). Максимум 2 операнда для нашего варианта.
+            // Это операнд 
             if (operands.size() < 2) {
                 operands.push_back(atof(argv[i]));
             } else {
@@ -60,7 +60,7 @@ int main(int argc, char *argv[]) {
             cerr << "Error: Logarithm domain error (x > 0).\n";
             return 1;
         }
-        // Функция log() в C++ - это натуральный логарифм
+      
         cout << "ln(" << operands[0] << ") = " << log(operands[0]) << "\n";
     } 
     else if (operation == "log") {
